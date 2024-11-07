@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Job</title>
+  </head>
+  <body>
+    <main class='all-info-blocks-wrap'>
+
+        <div class='info-block-wrap'>
+            <h1>Client details</h1>
+            <div class='all-inputs-wrap'>
+                <div class='inputs-row-warp'>
+                    <input required type="text" placeholder="First name"/>
+                    <input required type="text" placeholder='Last name'/>
+                </div>
+                <input required type="tel" placeholder='Phone'/>
+                <input required type="email" placeholder= 'Email (optional)'/>
+            </div>
+        </div> 
+
+        <div class='info-block-wrap'>
+            <h1>Job details</h1>
+            <div class='all-inputs-wrap'>
+                <div class='inputs-row-warp'>
+                    <select required >
+                        <option value="" disabled selected>Job type</option>
+                        <option value="1">Job type 1</option>
+                        <option value="2">Job type 1</option>
+                    </select>
+                    <select required>
+                        <option value="" disabled selected>Job source</option>
+                        <option value="1">Job source 1</option>
+                        <option value="2">Job source 2</option>
+                    </select>
+                </div>
+                <textarea type="text" placeholder="Job description (optional)"></textarea>
+            </div>
+        </div>
+
+        <div class='info-block-wrap'>
+            <h1>Service location</h1>
+            <div class='all-inputs-wrap'>
+                <input required type="text" placeholder="Address"/>
+                <input required type="text" placeholder='City'/>
+                <input required type="text" placeholder='State'/>
+                <div class='inputs-row-warp'>
+                    <input required type="text" placeholder='Zip code'/>
+                    <select required >
+                        <option value="" disabled selected>Area</option>
+                        <option value="1">Area 1</option>
+                        <option value="2">Area 2</option>
+                    </select>
+                </div>
+            </div>
+        </div>        
+
+        <div class='info-block-wrap'>
+            <h1>Scheduled</h1>
+            <div class='all-inputs-wrap'>
+                <input required type="text" 
+                    onfocus = "this.type='date'"
+                    onblur = "this.type='text'"
+                    placeholder= 'Start date'/>
+            <div class='inputs-row-warp'>
+                <input required type="text" 
+                    onfocus = "this.type='time'"
+                    onblur = "this.type='text'"
+                    placeholder= 'Start time'/>
+                <input required type="text" 
+                    onfocus = "this.type='time'"
+                    onblur = "this.type='text'"
+                    placeholder= 'End time'/>
+            </div>
+            <select required >
+                <option value="" disabled selected>Test select</option>
+                <option value="1">Test select 1</option>
+                <option value="2">Test select 2</option>
+            </select>
+            </div>
+        </div>  
+        <div class="buttons">
+            <button id="b1">Create Job</button>
+            <button id="b2">Save Info</button>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
